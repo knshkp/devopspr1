@@ -8,6 +8,7 @@ pipeline{
         }
         stage("test"){
             steps{
+                sh 'brew install node'
                 sh 'npm test'
             }
         }
